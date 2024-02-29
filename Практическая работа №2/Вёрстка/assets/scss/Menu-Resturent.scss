@@ -1,0 +1,465 @@
+@font-face {
+    font-family: Inter;
+    src: url(/Вёрстка/assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    src: url(/Вёрстка/assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: PoppinsB;
+    src: url(/Вёрстка/assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Sans;
+    src: url(/Вёрстка/assets/fonts/PublicSans-Regular.ttf);
+}
+@font-face {
+    font-family: Manrope;
+    src: url(/Вёрстка/assets/fonts/Manrope-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 1440px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+}
+// ШАПКА
+.header{
+    height: 135px;
+    padding: 48px 96px 0;
+    &__content{
+        width: 1248px;
+        height: 62px;
+        display: flex;
+        
+        img{
+            width: 112px;
+            height: 42px;
+            align-self: center;
+        }
+        // НАВИГАЦИОННОЕ МЕНЮ
+        nav{
+            width: 375px;
+            height: 27px;
+            margin-left: 103px;
+            margin-right: 426px;
+            align-self: center;
+            display: flex;
+            justify-content: space-between;
+            a{
+                text-decoration: none;
+                font-family: Inter;
+                font-size: 18px;
+                font-weight: 500;
+                color: #606060;
+            }
+        }
+        &__btn{
+            width: 233px;
+            height: 63px;
+            display: flex;
+            justify-content: space-between;
+            a{
+                align-self: center;
+                text-decoration: none;
+                font-family: Inter;
+                font-weight: 700;
+                color: #606060;
+            }
+            button{
+                width: 122px;
+                height: 63px;
+                border:none;
+                border-radius: 18px;
+                background-color: #6C5FBC;
+                a{
+                    color: #F9F9F9;
+                }
+            }
+            
+        }
+    }
+    hr{
+        margin-top: 25px;
+        border: 1px solid #CBCBCB;
+        opacity: 50%;
+    }
+}
+
+// ОСНОВНАЯ ЧАСТЬ СТРАНИЦЫ
+//БАНЕР
+.banner{
+    width: 1238px;
+    height: 497px;
+    margin: 106px 98px 0 104px;
+    &__content{
+        width: 1237px;
+        height: 497px;
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 8px 91px 45px 0px #E5E5E5B2;
+        &__text{
+            width: 1148px;
+            height: 62px;
+            display: flex;
+            justify-content: space-between;
+            margin: 26px auto 0 auto;
+            p{
+                font-family: Poppins;
+                font-size: 40px;
+                font-weight: 800;
+                line-height: 53px;
+                color: #323142;
+                align-self: center;
+            }
+            div{
+                width: 188px;
+                height: 35px;
+                display: flex;
+                justify-content: space-between;
+                align-self: center;
+                p{
+                    font-family: Manrope;
+                    font-size: 26px;
+                    font-weight: 400;
+                    line-height: 35px;
+                    color: #8E97A6;
+                }
+            }
+        }
+    }
+}
+
+.TopDishes{
+    width: 1247px;
+    height: 479px;
+    margin: 100px 0 0 97px;
+    &__Heading{
+        font-family: Poppins;
+        font-size: 35px;
+        font-weight: 800;
+        line-height: 26px;
+        color: #323142;
+    }
+    &__content{
+        display: flex;
+        justify-content: space-between;
+        &__cardChicken,&__cardDish,&__cardDishTwo{
+            width: 225px;
+            height: 390px;
+            border-radius: 35px;
+            margin-top: 76px;
+            box-shadow: 7px 82px 41px 0px #E5E5E5B2;
+            &__like{
+                position: absolute;
+                margin: 24px 0 0 181px;
+            }
+            &__food{
+                margin: 26px 0 0 15px;
+            }
+            h6{
+                height: 22px;
+                font-family: Poppins;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 17px;
+                margin: 3px 0 0 23px;
+                text-align: center;
+                padding-top: 3px;
+                border-radius: 5px;
+            }
+            h2{
+                font-family: Poppins;
+                font-size: 23px;
+                font-weight: 600;
+                line-height: 37px;
+                color: #323142;
+                margin-left: 23px;
+            }
+            div:nth-of-type(1){
+                display: flex;
+                gap: 6px;
+                margin-left: 23px;
+                p{
+                    font-family: Manrope;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    color: #8E97A6;
+                    align-self: center;
+                    margin-top: 1.5px;
+                }
+            }
+            div:nth-of-type(2){
+                display: flex;
+                margin: 12px 0 0 23px;
+                p{
+                    width: 115px;
+                    height: 40px;
+                    font-family: Manrope;
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    color: #323142;
+                    span{
+                        font-size: 19px;
+                        color: #8E97A6;
+                    }
+                }
+                img{
+                    margin-left: 15px;
+                }
+            }
+        }
+        &__cardChicken{
+            h6{
+                width: 59px;
+                color: #DAA31A;
+                background-color: #F7EDD0;
+            }
+        }
+        &__cardDish{
+            h6{
+                width: 64px;
+                color: #FB471D;
+                background-color: #F7C5BA;
+                margin-top: 7px;
+            }
+        }
+        &__cardDishTwo{
+            h6{
+                width: 59px;
+                color: #309d5b;
+                background-color: #d6eee0;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+
+
+.Chicken_Vegetables{
+    width: 1246px;
+    height: 483px;
+    margin: 145px 0 0 100px;
+    &__heading{
+        font-family: Poppins;
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 26px;
+    }
+    &__content{
+        display: flex;
+        gap: 32px;
+        &__cardChicken,&__cardDish{
+            width: 225px;
+            height: 390px;
+            border-radius: 35px;
+            margin-top: 62px;
+            box-shadow: 7px 82px 41px 0px #E5E5E5B2;
+            &__like{
+                position: absolute;
+                margin: 24px 0 0 181px;
+            }
+            &__food{
+                margin: 26px 0 0 15px;
+            }
+            h6{
+                height: 22px;
+                font-family: Poppins;
+                font-size: 11px;
+                font-weight: 400;
+                line-height: 17px;
+                margin: 3px 0 0 23px;
+                text-align: center;
+                padding-top: 3px;
+                border-radius: 5px;
+            }
+            h2{
+                font-family: Poppins;
+                font-size: 23px;
+                font-weight: 600;
+                line-height: 37px;
+                color: #323142;
+                margin-left: 23px;
+            }
+            div:nth-of-type(1){
+                display: flex;
+                gap: 6px;
+                margin-left: 23px;
+                p{
+                    font-family: Manrope;
+                    font-size: 17px;
+                    font-weight: 400;
+                    line-height: 23px;
+                    color: #8E97A6;
+                    align-self: center;
+                    margin-top: 1.5px;
+                }
+            }
+            div:nth-of-type(2){
+                display: flex;
+                margin: 12px 0 0 23px;
+                p{
+                    width: 115px;
+                    height: 40px;
+                    font-family: Manrope;
+                    font-size: 26px;
+                    font-weight: 700;
+                    line-height: 40px;
+                    color: #323142;
+                    span{
+                        font-size: 19px;
+                        color: #8E97A6;
+                    }
+                }
+                img{
+                    margin-left: 15px;
+                }
+            }
+        }
+        &__cardChicken{
+            h6{
+                width: 59px;
+                color: #DAA31A;
+                background-color: #F7EDD0;
+            }
+        }
+        &__cardDish{
+            h6{
+                width: 64px;
+                color: #FB471D;
+                background-color: #F7C5BA;
+                margin-top: 7px;
+            }
+        }
+    }
+    hr{
+        border: 1px solid #CBCBCB;
+        opacity: 40%;
+        margin-top: 150px;
+    }
+}
+
+.FAQs{
+    width: 1152px;
+    height: 870px;
+    margin: 280px auto 0 auto;
+    &__vector{
+        margin-left: 780px;
+    }
+    p{
+        text-align: center;
+        font-family: Poppins;
+        font-size: 45px;
+        font-weight: 800;
+        line-height: 54px;
+        color: #323142;
+        span{
+            color: #6C5FBC;
+        }
+    }
+    &__content{
+        width: 1152px;
+        height: 494px;
+        margin-top: 114px;
+        p{
+            font-family: Poppins;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 32px;
+            color: #686868;
+            text-align: left;
+            margin-top: 19px;
+        }
+        &__text{
+            width: 1152px;
+            height: 76px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 29px;
+            p{
+                font-family: Poppins;
+                font-size: 23px;
+                font-weight: 600;
+                line-height: 59px;
+                color: #323142;
+                margin: 0;
+                align-self: center;
+            }
+            img{
+                width: 30px;
+                height: 30px;
+                align-self: center;
+            }
+        }
+        hr{
+            border: 1px solid #ADADAD;
+            opacity: 50%;
+        }
+    }
+}
+
+//ПОДВАЛ
+.footer{
+    width: 1440px;
+    height: 345px;
+    background-color: #EAEAEA;
+    margin-top: 164px;
+    &__content{
+        padding: 96px 85px 0 103px;
+        &__nav{
+            width: 1250px;
+            height: 57px;
+            display: flex;
+            justify-content: space-between;
+            nav{
+                width: 456px;
+                height: 27px;
+                align-self: center;
+                display: flex;
+                justify-content: space-between;
+                a{
+                    text-decoration: none;
+                    font-family: Inter;
+                    font-size: 18px;
+                    font-weight: 500;
+                    line-height: 27px;
+                    color: #999999;
+                }
+            }
+        }
+        hr{
+            margin-top: 29px;
+            border: 1px solid #CBCBCB;
+        }
+        &__icon{
+            width: 1238px;
+            height: 35px;
+            display: flex;
+            justify-content: space-between;
+            margin-top: 57px;
+            p{
+                font-family: Inter;
+                font-size: 17px;
+                font-weight: 500;
+                line-height: 25px;
+                color: #999999;
+                align-self: center;
+            }
+            &__img{
+                width: 235px;
+                height: 22px;
+                align-self: center;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

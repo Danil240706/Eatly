@@ -1,0 +1,247 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Inter;
+  src: url(/Вёрстка/assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(/Вёрстка/assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsB;
+  src: url(/Вёрстка/assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Sans;
+  src: url(/Вёрстка/assets/fonts/PublicSans-Regular.ttf);
+}
+@font-face {
+  font-family: Manrope;
+  src: url(/Вёрстка/assets/fonts/Manrope-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.header {
+  height: 135px;
+  padding: 48px 96px 0;
+}
+.header__content {
+  width: 1248px;
+  height: 62px;
+  display: flex;
+}
+.header__content img {
+  width: 112px;
+  height: 42px;
+  align-self: center;
+}
+.header__content nav {
+  width: 375px;
+  height: 27px;
+  margin-left: 103px;
+  margin-right: 426px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__content nav a {
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  color: #606060;
+}
+.header__content__btn {
+  width: 233px;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__content__btn a {
+  align-self: center;
+  text-decoration: none;
+  font-family: Inter;
+  font-weight: 700;
+  color: #606060;
+}
+.header__content__btn button {
+  width: 122px;
+  height: 63px;
+  border: none;
+  border-radius: 18px;
+  background-color: #6C5FBC;
+}
+.header__content__btn button a {
+  color: #F9F9F9;
+}
+.header hr {
+  margin-top: 25px;
+  border: 1px solid #CBCBCB;
+  opacity: 50%;
+}
+
+.banner {
+  width: 1248px;
+  height: 734px;
+  border-radius: 39px;
+  margin: 79px 0 0 96px;
+}
+.banner img:nth-child(1) {
+  position: absolute;
+}
+.banner__location {
+  width: 328px;
+  height: 384px;
+  position: relative;
+  top: 83px;
+  left: 344px;
+}
+.banner__location__FoodCard {
+  width: 149px;
+  height: 57px;
+  border-radius: 9px;
+  display: flex;
+  background-color: white;
+  box-shadow: 18px 12px 25px rgba(50, 49, 66, 0.05);
+}
+.banner__location__FoodCard img {
+  width: 46px;
+  height: 48px;
+  margin: 4px 0 0 5px;
+}
+.banner__location__FoodCard__text p {
+  font-family: Poppins;
+}
+.banner__location__FoodCard__text p:nth-of-type(1) {
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #323142;
+  margin: 7px 0 0 59px;
+}
+.banner__location__FoodCard__text p:nth-of-type(2) {
+  font-size: 8px;
+  font-weight: 500;
+  line-height: 11px;
+  color: #ACADB9;
+  margin-left: 59px;
+}
+.banner__location img:nth-child(2) {
+  margin-left: 69px;
+}
+.banner__location__TextCard {
+  width: 168px;
+  height: 56px;
+  border-radius: 9px;
+  background-color: white;
+  position: absolute;
+  top: 310px;
+  left: 14px;
+  padding: 16px 0 0 22px;
+  box-shadow: 0px 20px 35px rgba(50, 49, 66, 0.15);
+}
+.banner__location__TextCard p {
+  font-family: Poppins;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #ACADB9;
+}
+.banner__DetailCard {
+  width: 451px;
+  height: 308px;
+  border-radius: 25px;
+  background-color: white;
+  position: relative;
+  top: 178px;
+  left: 416px;
+}
+.banner__DetailCard__Rider {
+  width: 451px;
+  height: 108px;
+  background-color: #323142;
+  border-radius: 25px 25px 0px 0px;
+}
+.banner__DetailCard__Rider img {
+  width: 62px;
+  height: 59px;
+  margin: 21px 0 0 20px;
+}
+.banner__DetailCard__Rider p {
+  font-family: Poppins;
+  position: relative;
+  top: 25px;
+  left: 102px;
+}
+.banner__DetailCard__Rider p:nth-of-type(1) {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 31px;
+  color: #F3F5F6;
+}
+.banner__DetailCard__Rider p:nth-of-type(2) {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ACADB9;
+}
+.banner__DetailCard__Details {
+  width: 233px;
+  height: 126px;
+  margin: 32px 0 0 20px;
+}
+.banner__DetailCard__Details p {
+  margin-left: 72px;
+}
+.banner__DetailCard__Details p:nth-of-type(1), .banner__DetailCard__Details p:nth-of-type(3) {
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  color: #ACADB9;
+}
+.banner__DetailCard__Details p:nth-of-type(2), .banner__DetailCard__Details p:nth-of-type(4) {
+  font-family: Poppins;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #323142;
+  margin-top: 3px;
+}
+.banner__DetailCard__Details p:nth-of-type(3) {
+  margin-top: 30px;
+}
+.banner__DetailCard button {
+  position: absolute;
+  top: 243px;
+  left: 300px;
+  width: 131px;
+  height: 42px;
+  border: none;
+  border-radius: 4px;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 22px;
+  color: white;
+  background-color: #6C5FBC;
+}
+
+.Review-Payment {
+  width: 977px;
+  height: 767px;
+  margin: 292px 224px 0 239px;
+}
+.Review-Payment img {
+  margin-left: 832px;
+}/*# sourceMappingURL=Menu-Map.css.map */

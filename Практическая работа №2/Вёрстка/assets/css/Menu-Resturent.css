@@ -1,0 +1,449 @@
+@charset "UTF-8";
+@font-face {
+  font-family: Inter;
+  src: url(/Вёрстка/assets/fonts/Inter-Regular.ttf);
+}
+@font-face {
+  font-family: Poppins;
+  src: url(/Вёрстка/assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: PoppinsB;
+  src: url(/Вёрстка/assets/fonts/Poppins-ExtraBold.ttf);
+}
+@font-face {
+  font-family: Sans;
+  src: url(/Вёрстка/assets/fonts/PublicSans-Regular.ttf);
+}
+@font-face {
+  font-family: Manrope;
+  src: url(/Вёрстка/assets/fonts/Manrope-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 1440px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.header {
+  height: 135px;
+  padding: 48px 96px 0;
+}
+.header__content {
+  width: 1248px;
+  height: 62px;
+  display: flex;
+}
+.header__content img {
+  width: 112px;
+  height: 42px;
+  align-self: center;
+}
+.header__content nav {
+  width: 375px;
+  height: 27px;
+  margin-left: 103px;
+  margin-right: 426px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+.header__content nav a {
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  color: #606060;
+}
+.header__content__btn {
+  width: 233px;
+  height: 63px;
+  display: flex;
+  justify-content: space-between;
+}
+.header__content__btn a {
+  align-self: center;
+  text-decoration: none;
+  font-family: Inter;
+  font-weight: 700;
+  color: #606060;
+}
+.header__content__btn button {
+  width: 122px;
+  height: 63px;
+  border: none;
+  border-radius: 18px;
+  background-color: #6C5FBC;
+}
+.header__content__btn button a {
+  color: #F9F9F9;
+}
+.header hr {
+  margin-top: 25px;
+  border: 1px solid #CBCBCB;
+  opacity: 50%;
+}
+
+.banner {
+  width: 1238px;
+  height: 497px;
+  margin: 106px 98px 0 104px;
+}
+.banner__content {
+  width: 1237px;
+  height: 497px;
+  border-radius: 30px;
+  background-color: white;
+  box-shadow: 8px 91px 45px 0px rgba(229, 229, 229, 0.6980392157);
+}
+.banner__content__text {
+  width: 1148px;
+  height: 62px;
+  display: flex;
+  justify-content: space-between;
+  margin: 26px auto 0 auto;
+}
+.banner__content__text p {
+  font-family: Poppins;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 53px;
+  color: #323142;
+  align-self: center;
+}
+.banner__content__text div {
+  width: 188px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+}
+.banner__content__text div p {
+  font-family: Manrope;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #8E97A6;
+}
+
+.TopDishes {
+  width: 1247px;
+  height: 479px;
+  margin: 100px 0 0 97px;
+}
+.TopDishes__Heading {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 26px;
+  color: #323142;
+}
+.TopDishes__content {
+  display: flex;
+  justify-content: space-between;
+}
+.TopDishes__content__cardChicken, .TopDishes__content__cardDish, .TopDishes__content__cardDishTwo {
+  width: 225px;
+  height: 390px;
+  border-radius: 35px;
+  margin-top: 76px;
+  box-shadow: 7px 82px 41px 0px rgba(229, 229, 229, 0.6980392157);
+}
+.TopDishes__content__cardChicken__like, .TopDishes__content__cardDish__like, .TopDishes__content__cardDishTwo__like {
+  position: absolute;
+  margin: 24px 0 0 181px;
+}
+.TopDishes__content__cardChicken__food, .TopDishes__content__cardDish__food, .TopDishes__content__cardDishTwo__food {
+  margin: 26px 0 0 15px;
+}
+.TopDishes__content__cardChicken h6, .TopDishes__content__cardDish h6, .TopDishes__content__cardDishTwo h6 {
+  height: 22px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 3px 0 0 23px;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 5px;
+}
+.TopDishes__content__cardChicken h2, .TopDishes__content__cardDish h2, .TopDishes__content__cardDishTwo h2 {
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 37px;
+  color: #323142;
+  margin-left: 23px;
+}
+.TopDishes__content__cardChicken div:nth-of-type(1), .TopDishes__content__cardDish div:nth-of-type(1), .TopDishes__content__cardDishTwo div:nth-of-type(1) {
+  display: flex;
+  gap: 6px;
+  margin-left: 23px;
+}
+.TopDishes__content__cardChicken div:nth-of-type(1) p, .TopDishes__content__cardDish div:nth-of-type(1) p, .TopDishes__content__cardDishTwo div:nth-of-type(1) p {
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #8E97A6;
+  align-self: center;
+  margin-top: 1.5px;
+}
+.TopDishes__content__cardChicken div:nth-of-type(2), .TopDishes__content__cardDish div:nth-of-type(2), .TopDishes__content__cardDishTwo div:nth-of-type(2) {
+  display: flex;
+  margin: 12px 0 0 23px;
+}
+.TopDishes__content__cardChicken div:nth-of-type(2) p, .TopDishes__content__cardDish div:nth-of-type(2) p, .TopDishes__content__cardDishTwo div:nth-of-type(2) p {
+  width: 115px;
+  height: 40px;
+  font-family: Manrope;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #323142;
+}
+.TopDishes__content__cardChicken div:nth-of-type(2) p span, .TopDishes__content__cardDish div:nth-of-type(2) p span, .TopDishes__content__cardDishTwo div:nth-of-type(2) p span {
+  font-size: 19px;
+  color: #8E97A6;
+}
+.TopDishes__content__cardChicken div:nth-of-type(2) img, .TopDishes__content__cardDish div:nth-of-type(2) img, .TopDishes__content__cardDishTwo div:nth-of-type(2) img {
+  margin-left: 15px;
+}
+.TopDishes__content__cardChicken h6 {
+  width: 59px;
+  color: #DAA31A;
+  background-color: #F7EDD0;
+}
+.TopDishes__content__cardDish h6 {
+  width: 64px;
+  color: #FB471D;
+  background-color: #F7C5BA;
+  margin-top: 7px;
+}
+.TopDishes__content__cardDishTwo h6 {
+  width: 59px;
+  color: #309d5b;
+  background-color: #d6eee0;
+  margin-top: 5px;
+}
+
+.Chicken_Vegetables {
+  width: 1246px;
+  height: 483px;
+  margin: 145px 0 0 100px;
+}
+.Chicken_Vegetables__heading {
+  font-family: Poppins;
+  font-size: 35px;
+  font-weight: 600;
+  line-height: 26px;
+}
+.Chicken_Vegetables__content {
+  display: flex;
+  gap: 32px;
+}
+.Chicken_Vegetables__content__cardChicken, .Chicken_Vegetables__content__cardDish {
+  width: 225px;
+  height: 390px;
+  border-radius: 35px;
+  margin-top: 62px;
+  box-shadow: 7px 82px 41px 0px rgba(229, 229, 229, 0.6980392157);
+}
+.Chicken_Vegetables__content__cardChicken__like, .Chicken_Vegetables__content__cardDish__like {
+  position: absolute;
+  margin: 24px 0 0 181px;
+}
+.Chicken_Vegetables__content__cardChicken__food, .Chicken_Vegetables__content__cardDish__food {
+  margin: 26px 0 0 15px;
+}
+.Chicken_Vegetables__content__cardChicken h6, .Chicken_Vegetables__content__cardDish h6 {
+  height: 22px;
+  font-family: Poppins;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 17px;
+  margin: 3px 0 0 23px;
+  text-align: center;
+  padding-top: 3px;
+  border-radius: 5px;
+}
+.Chicken_Vegetables__content__cardChicken h2, .Chicken_Vegetables__content__cardDish h2 {
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 37px;
+  color: #323142;
+  margin-left: 23px;
+}
+.Chicken_Vegetables__content__cardChicken div:nth-of-type(1), .Chicken_Vegetables__content__cardDish div:nth-of-type(1) {
+  display: flex;
+  gap: 6px;
+  margin-left: 23px;
+}
+.Chicken_Vegetables__content__cardChicken div:nth-of-type(1) p, .Chicken_Vegetables__content__cardDish div:nth-of-type(1) p {
+  font-family: Manrope;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #8E97A6;
+  align-self: center;
+  margin-top: 1.5px;
+}
+.Chicken_Vegetables__content__cardChicken div:nth-of-type(2), .Chicken_Vegetables__content__cardDish div:nth-of-type(2) {
+  display: flex;
+  margin: 12px 0 0 23px;
+}
+.Chicken_Vegetables__content__cardChicken div:nth-of-type(2) p, .Chicken_Vegetables__content__cardDish div:nth-of-type(2) p {
+  width: 115px;
+  height: 40px;
+  font-family: Manrope;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 40px;
+  color: #323142;
+}
+.Chicken_Vegetables__content__cardChicken div:nth-of-type(2) p span, .Chicken_Vegetables__content__cardDish div:nth-of-type(2) p span {
+  font-size: 19px;
+  color: #8E97A6;
+}
+.Chicken_Vegetables__content__cardChicken div:nth-of-type(2) img, .Chicken_Vegetables__content__cardDish div:nth-of-type(2) img {
+  margin-left: 15px;
+}
+.Chicken_Vegetables__content__cardChicken h6 {
+  width: 59px;
+  color: #DAA31A;
+  background-color: #F7EDD0;
+}
+.Chicken_Vegetables__content__cardDish h6 {
+  width: 64px;
+  color: #FB471D;
+  background-color: #F7C5BA;
+  margin-top: 7px;
+}
+.Chicken_Vegetables hr {
+  border: 1px solid #CBCBCB;
+  opacity: 40%;
+  margin-top: 150px;
+}
+
+.FAQs {
+  width: 1152px;
+  height: 870px;
+  margin: 280px auto 0 auto;
+}
+.FAQs__vector {
+  margin-left: 780px;
+}
+.FAQs p {
+  text-align: center;
+  font-family: Poppins;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 54px;
+  color: #323142;
+}
+.FAQs p span {
+  color: #6C5FBC;
+}
+.FAQs__content {
+  width: 1152px;
+  height: 494px;
+  margin-top: 114px;
+}
+.FAQs__content p {
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 32px;
+  color: #686868;
+  text-align: left;
+  margin-top: 19px;
+}
+.FAQs__content__text {
+  width: 1152px;
+  height: 76px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 29px;
+}
+.FAQs__content__text p {
+  font-family: Poppins;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 59px;
+  color: #323142;
+  margin: 0;
+  align-self: center;
+}
+.FAQs__content__text img {
+  width: 30px;
+  height: 30px;
+  align-self: center;
+}
+.FAQs__content hr {
+  border: 1px solid #ADADAD;
+  opacity: 50%;
+}
+
+.footer {
+  width: 1440px;
+  height: 345px;
+  background-color: #EAEAEA;
+  margin-top: 164px;
+}
+.footer__content {
+  padding: 96px 85px 0 103px;
+}
+.footer__content__nav {
+  width: 1250px;
+  height: 57px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__content__nav nav {
+  width: 456px;
+  height: 27px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__content__nav nav a {
+  text-decoration: none;
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: #999999;
+}
+.footer__content hr {
+  margin-top: 29px;
+  border: 1px solid #CBCBCB;
+}
+.footer__content__icon {
+  width: 1238px;
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 57px;
+}
+.footer__content__icon p {
+  font-family: Inter;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #999999;
+  align-self: center;
+}
+.footer__content__icon__img {
+  width: 235px;
+  height: 22px;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+}/*# sourceMappingURL=Menu-Resturent.css.map */
